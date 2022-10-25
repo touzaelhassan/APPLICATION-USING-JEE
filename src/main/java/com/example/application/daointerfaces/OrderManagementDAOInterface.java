@@ -5,8 +5,8 @@ import com.example.application.entities.Order;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public interface OrderManagementDAO {
+public interface OrderManagementDAOInterface {
 
-    public ArrayList<Order> getOrders() throws SQLException;
+    public ArrayList<Order> getOrders(int customer_id) throws SQLException;
 
 }
