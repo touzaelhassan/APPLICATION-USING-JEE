@@ -1,6 +1,5 @@
 package com.example.application.daoclasses;
 
-import com.example.application.daointerfaces.ConnectionManagerDAO;
 import com.example.application.daointerfaces.CustomerManagementDAOInterface;
 import com.example.application.entities.Customer;
 
