@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public interface ProductManagementDAOInterface {
 
-    public ArrayList<Product> getProducts() throws SQLException;
-    public Product find(int id) throws SQLException;
+    ArrayList<Product> getProducts() throws SQLException;
+    Product find(int id) throws SQLException;
 
 }
