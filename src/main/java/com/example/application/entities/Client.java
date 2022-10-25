@@ -8,6 +8,16 @@ public class Client {
     private String phone;
     private String address;
 
+    public Client(){ }
+
+    public Client(int id, String name, String email, String phone, String address) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+    }
+
     public void setId(int id) { this.id = id; }
     public int getId() { return id; }
     public String getName() { return name; }
@@ -19,4 +29,14 @@ public class Client {
     public String getAddress() { return address; }
     public void setAddress(String address) { this.address = address; }
 
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
