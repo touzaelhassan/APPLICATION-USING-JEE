@@ -1,6 +1,6 @@
 package com.example.application.entities;
 
-public class Client {
+public class Customer {
 
     private int id;
     private String name;
@@ -8,9 +8,9 @@ public class Client {
     private String phone;
     private String address;
 
-    public Client(){ }
+    public Customer(){ }
 
-    public Client(int id, String name, String email, String phone, String address) {
+    public Customer(int id, String name, String email, String phone, String address) {
         this.id = id;
         this.name = name;
         this.email = email;
