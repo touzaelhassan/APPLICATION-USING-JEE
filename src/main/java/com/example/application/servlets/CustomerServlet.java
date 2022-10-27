@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-@WebServlet(name = "CustomersServlet", value = "/customers")
-public class CustomersServlet extends HttpServlet {
+@WebServlet(name = "CustomerServlet", value = "/CustomerServlet")
+public class CustomerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,8 +22,6 @@ public class CustomersServlet extends HttpServlet {
             CustomerManagementDAOInterface customerManagementDAO = new CustomerManagementDAO();
 
             ArrayList<Customer>  customers = customerManagementDAO.getCustomers() ;
-
-            System.out.println(customers);
 
             request.setAttribute("customers", customers);
 

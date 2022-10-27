@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-@WebServlet(name = "OrdersServlet", value = "/orders")
-public class OrdersServlet extends HttpServlet {
+@WebServlet(name = "OrderServlet", value = "/orders")
+public class OrderServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,8 +24,6 @@ public class OrdersServlet extends HttpServlet {
             ArrayList<Order> orders =  orderManagementDAO.getOrders(1);
 
             request.setAttribute("orders", orders);
-
-            System.out.println(orders);
 
             getServletContext().getRequestDispatcher("/orders.jsp").forward(request, response);
 

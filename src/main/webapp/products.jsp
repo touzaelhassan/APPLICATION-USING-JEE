@@ -22,7 +22,7 @@
        <p>Description : <%=products.get(i).getDescription() %> </p>
        <p>Price : <%=products.get(i).getPrice() %> </p>
        <p>Quantity : <%=products.get(i).getQuantity() %> </p>
-
+       <a href="AddToCartServlet">Add To Cart</a>
    </div>
 
 <%}%>
